@@ -12,8 +12,8 @@ let age = 20
 let isLoggedIn = false
 
 //number 2 to power 53
-//bigInt
-//string
+//bigInt = 34567n
+//string = ""
 //null == standalone value
 //undefined = valude not assigend
 //symbol = unique
