@@ -76,9 +76,9 @@ console.log(courseInstr) // did not work because we did no extract that
 
 //========================  API ===========================
 
-{
-    "name": "qasim",
-    "courseName": "js by chai code",
-    "price": "free"
-}
+// {
+//     "name": "qasim",
+//     "courseName": "js by chai code",
+//     "price": "free"
+// }
 
