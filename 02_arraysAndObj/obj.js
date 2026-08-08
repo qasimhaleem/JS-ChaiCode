@@ -8,11 +8,11 @@ const JsUser = {
     [mySymbol]: "myKey2",
     location: "thal hangu",
     email: "mrqasimhaleem@gmail.com",
-    lastLoginDay: "18 apr 2023",
+    lastLoginDay: Date(),
     value: newSym,
     contact: 23457765
 }
-// console.log(JsUser.name)
+// console.log(JsUser)
 // console.log(JsUser["full name"])
 // // both are usful syntex
 
@@ -25,10 +25,10 @@ JsUser["full name"] = "mr qasim haleem"
 // other editing are allowed
 // JsUser.contact = "00000000"
 JsUser.greeting = function() {
-    console.log("hello i am function")
+    // console.log("hello i am function")
 }
-console.log(JsUser.greeting())
+// console.log(JsUser.greeting())
 JsUser.greetingTwo = function(){
- console.log(`hello students, this is ${this.name}`)
+//  console.log(`hello students, this is ${this.name}`)
 }
-console.log(JsUser.greetingTwo())
+// console.log(JsUser.greetingTwo())
