@@ -37,7 +37,7 @@ for (let i = 0; i < myArray.length; i++) {
 for (let i = 0; i <= 20; i++) {
     if(i == 5) {
         console.log(`5 detected`)
-        continue
+        continue // skip that value for the current execution
     }
     console.log(`vlaue of i is ${i}`)  
 }
