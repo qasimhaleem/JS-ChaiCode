@@ -7,6 +7,8 @@
 </head>
 <body style="background-color: #212121; color: #fff;">
     <div class="parent">
+        <!-- this is for testing of the nodes in the console -->
+
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednsday</div>
@@ -22,7 +24,20 @@
     //     console.log(parent.children[i].innerHTML)  
     // }
     parent.children[3].style.color = 'orange'
-    console.log(parent.firstElementChild)
-    console.log(parent.lastElementChild)
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+
+    // const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement)
+    // let nextDay2 = dayOne.nextElementSibling
+    // console.log(nextDay2)
+    // let nextDay3 = nextDay2.nextElementSibling
+    // console.log(nextDay3)
+
+    console.log("Nodes: ", parent.childNodes)
+
+
+
 </script>
 </html>

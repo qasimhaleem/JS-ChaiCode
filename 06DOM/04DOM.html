@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM last video</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+      <ul class="language">
+        <li>JavaScirpt</li>
+      </ul>
+    
+</body>
+<script>
+    function addLanguage(lang) {
+        const li = document.createElement('li')
+        const addText = document.createTextNode(lang)
+        li.appendChild(addText)
+        const ul = document.getElementsByClassName('language')[0]
+        ul.appendChild(li)
+    }
+    addLanguage('python')
+    addLanguage('typeScritp')
+    addLanguage('ruby')
+
+    function addOptiLanguage(lang) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('c++')
+ 
+
+    // Edit
+//    const secondLang = document.querySelector("li:nth-child(2)")
+// //    secondLang.innerHTML = 'mojo'
+//    const li = document.createElement('li')
+//    li.textContent = "mojo"
+//    secondLang.replaceWith(li)
+
+    // const forthLang = document.querySelector('li:nth-child(4)')
+    // const newLi = document.createElement('li')
+    // newLi.innerHTML = "<strong>Kotlin</strong>"
+    // console.log(newLi)
+    // forthLang.replaceWith(newLi)
+    // // newLi.textContent = "<strong>C#</strong>"
+    // console.log(newLi)
+
+    // const firstLang = document.querySelector('li:nth-child(1)')
+    // const newLi = document.createElement('li') 
+    // const addText = document.createTextNode('TypeScript')
+    // newLi.appendChild(addText)
+    // firstLang.replaceWith(newLi)
+
+    // const getPlace = document.querySelector('li:nth-child(2)')
+    // const newName = document.createElement('li')
+    // // newName.textContent = "html"
+    // const addText = document.createTextNode('hello')
+    // newName.appendChild(addText)
+    // getPlace.replaceWith(newName)
+
+    // remove
+
+
+    // const lastLang = document.querySelector('li:last-child')
+    // lastLang.remove()
+    
+
+</script>
+</html>
