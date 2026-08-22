@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Studeid</title>
+</head>
+<body>
+    <ul id="images">
+        <li><img src="../public/bathroom_gallery2.png" alt="picOne" ></img></li>
+        <li><img src="../public/bathroom_gallery3.png" alt="picOne"></img></li>
+        <li><img src="../public/cable_coils.png" id="cableCoils" alt="picOne"></img></li>
+        <li><img src="../public/david.png" alt="picOne"></img></li>
+        <li><a href="https://www.google.com" id="google">Googel</a></li>
+    </ul>
+</body>
+
+<script>
+    document.querySelector('#images').addEventListener('click', (e) => {
+        e.preventDefault()
+        // both work and depnd on your knowledge of e
+     //    images.removeChild(rem)
+     console.log(e.target.tagName)
+       if(e.target.tagName === 'IMG') {
+        const rem = e.target.parentNode
+       rem.remove()
+       }
+    })
+</script>
+<script src="event.js"></script>
+
+</html>

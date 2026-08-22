@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed function</title>
+</head>
+<body>
+    <h2 id="head1">The learner</h2>
+    <button id="btn">Click</button>
+</body>
+<script>
+    const changeMe = setTimeout(() => {
+        console.log("QasimHaleem")
+        document.querySelector('#head1').innerHTML = 'Chai Code'
+    }, 2000) 
+
+    document.querySelector('#btn').addEventListener('click', () => {
+        clearTimeout(changeMe)
+        console.log('text changing stope')
+    })
+</script>
+</html>
