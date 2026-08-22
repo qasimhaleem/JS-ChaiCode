@@ -19,11 +19,8 @@ let playGame = true
             const guess = parseInt(userInput.value)
             console.log(guess)
             validateGuess(guess)
-        })
-        
+        })   
     }
-
-
 function validateGuess(guess) {
     if(isNaN(guess)) {
         alert('Please enter only number')
@@ -45,7 +42,6 @@ function validateGuess(guess) {
         }   
     }
 }
-
 function checkGuess(guess) {
     if(guess === random) {
         displayMessage("You guess it right")
@@ -58,7 +54,6 @@ function checkGuess(guess) {
         displayMessage("Number is to High")
     } 
 }
-
 function displayMessage(mesg) {
     lowOrHigh.innerHTML = `<h2>${mesg}</h2>`
 
@@ -87,11 +82,10 @@ function newGame() {
         prevGuess = []
         numGuess = 1
         guessSlot.innerHTML = ''
-        remaining.innerHTML `${11 - numGuess}`
+        remaining.innerHTML = 10
         userInput.removeAttribute('disabled')
         startOver.removeChild(p)
         playGame = true
-
     })
 
 }
