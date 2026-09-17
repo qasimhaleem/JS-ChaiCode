@@ -100,3 +100,4 @@ fetch('https://api.github.com/users/qasimhaleem')
     console.log(data.name)
 })
 .catch((error) => {console.log('e: ', error)})
+ 
